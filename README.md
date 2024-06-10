@@ -112,7 +112,9 @@ The admin interface provides a convenient way to manage wards and their results.
 If you set up using sqlite for filed and drop down would be empty to click on the login button then sign in with  your superuser username and password then start inputing defualt data one by one and you will notcie that the home page is updataded 
 
 check https://bincom.virtuallysafe.org to see how it works!
-
+Admin login credentialz
+username: wisteen
+password: pass
 
 ## License
 This project has no license 
