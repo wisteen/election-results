@@ -113,8 +113,8 @@ If you set up using sqlite for filed and drop down would be empty to click on th
 
 check https://bincom.virtuallysafe.org to see how it works!
 Admin login credentialz
-username: wisteen
-password: pass
+## -username: wisteen
+## -password: pass
 
 ## License
 This project has no license 
