@@ -108,5 +108,11 @@ The admin interface provides a convenient way to manage wards and their results.
 1. Click on "Announced Ward Results" to add, edit, or delete ward results.
 2. Enter the details of the results for each ward.
 
+## NOTE: 
+If you set up using sqlite for filed and drop down would be empty to click on the login button then sign in with  your superuser username and password then start inputing defualt data one by one and you will notcie that the home page is updataded 
+
+check https://bincom.virtuallysafe.org to see how it works!
+
+
 ## License
 This project has no license 

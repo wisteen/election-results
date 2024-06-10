@@ -1,1 +1,4 @@
 django-crispy-forms
+django
+pymysql
+jazzmin
