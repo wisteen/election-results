@@ -86,13 +86,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'virtcbxf_vote',
-        'USER': 'virtcbxf_vote',
-        'PASSWORD': 'Royrex%%123%%',
+        'NAME': 'your db name',
+        'USER': 'your username',
+        'PASSWORD': 'your password',
         'HOST': 'localhost',  # Or the host of your MySQL server
         'PORT': '3306',       # Or the port of your MySQL server
     }
 }
+
 
 
 # Password validation
