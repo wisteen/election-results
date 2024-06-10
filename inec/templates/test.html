@@ -1,0 +1,52 @@
+<!-- your_template.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    <script type="text/javascript">
+        $("#id_state").change(function () {
+            var url = "{% url 'load_lgas' %}";  // Get the url of the `load_lgas` view
+            var stateId = $(this).val();  // Get the selected state ID from the HTML input
+
+            $.ajax({
+                url: url,
+                data: {
+                    'state_id': stateId
+                },
+                success: function (data) {
+                    $("#id_lga").html(data.map(function (item) {
+                        return `<option value="${item.id}">${item.lga_name}</option>`;
+                    }));
+                }
+            });
+        });
+
+        $("#id_lga").change(function () {
+            var url = "{% url 'load_polling_units' %}";  // Get the url of the `load_polling_units` view
+            var lgaId = $(this).val();  // Get the selected LGA ID from the HTML input
+
+            $.ajax({
+                url: url,
+                data: {
+                    'lga_id': lgaId
+                },
+                success: function (data) {
+                    $("#id_polling_unit").html(data.map(function (item) {
+                        return `<option value="${item.id}">${item.polling_unit_name}</option>`;
+                    }));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
